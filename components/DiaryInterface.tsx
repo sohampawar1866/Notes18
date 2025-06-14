@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { LogOut } from "lucide-react"
 import DiaryCard from "./DiaryCard"
 import DiaryEditor from "./DiaryEditor"
+import Image from "next/image"
 
 interface DiaryEntry {
   _id: string
@@ -87,10 +88,10 @@ export default function DiaryInterface({ onLogout }: DiaryInterfaceProps) {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white text-sm">📖</span>
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center p-1">
+              <Image src="/logo.png" alt="Notes18 Logo" width={24} height={24} className="w-6 h-6 object-contain" />
             </div>
-            <h1 className="text-xl font-light text-slate-800">Futuristic Diary</h1>
+            <h1 className="text-xl font-light text-slate-800">Notes18</h1>
           </motion.div>
 
           <Button variant="outline" onClick={handleLogout} className="border-slate-300 hover:bg-slate-50">
