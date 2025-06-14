@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "A secure personal diary app",
   generator: "v0.dev",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.png",
   },
 }
 
