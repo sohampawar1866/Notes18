@@ -42,6 +42,7 @@ npm install
 # 3. Set up environment variables
 # Create a `.env.local` file in the project root:
 MONGODB_URI=your_mongodb_connection_string
+SECURITY_KEY=your_fav_song
 
 # 4. Run in development mode
 npm run dev
