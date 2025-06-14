@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 interface AuthScreenProps {
   onLogin: () => void
@@ -59,11 +60,11 @@ export default function AuthScreen({ onLogin }: AuthScreenProps) {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center"
+              className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center p-2"
             >
-              <span className="text-2xl">📖</span>
+              <Image src="/logo.png" alt="Notes18 Logo" width={48} height={48} className="w-12 h-12 object-contain" />
             </motion.div>
-            <CardTitle className="text-2xl font-light text-slate-800">Futuristic Diary</CardTitle>
+            <CardTitle className="text-2xl font-light text-slate-800">Notes18</CardTitle>
             <CardDescription className="text-slate-600">A secure space for your thoughts</CardDescription>
           </CardHeader>
           <CardContent>
